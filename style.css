@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #222;
+    /* Remove any blur filter if present */
+    /* filter: none; */
+    image-rendering: auto;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: center;
+    background: linear-gradient(135deg, #cfeafe 0%, #ffe0f0 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 40px 30px 30px 30px;
+}
+
+.big-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+}
+
+.main-btn {
+    padding: 14px 38px;
+    background: #f472b6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.2s;
+}
+
+.main-btn:hover {
+    background: #ec4899;
+}
+
+#question-text {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.choice-btn {
+    padding: 12px 0;
+    background: #e0e7ef;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.choice-btn:hover:not(.disabled) {
+    background: #fbcfe8;
+}
+
+.choice-btn.correct {
+    background: #4ade80 !important;
+    color: #fff;
+}
+
+.choice-btn.wrong {
+    background: #f87171 !important;
+    color: #fff;
+}
+
+.choice-btn.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+#score {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #6366f1;
+}
+
+#result-screen h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #16a34a;
+}
+
+.guess-btn {
+    padding: 14px 38px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.boy-btn {
+    background: #3b82f6;
+}
+
+.boy-btn:hover {
+    background: #2563eb;
+}
+
+.girl-btn {
+    background: #f472b6;
+}
+
+.girl-btn:hover {
+    background: #ec4899;
+}
+
+.guess-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+#quiz-screen {
+    background: linear-gradient(135deg, #b2ccef 0%, #c8abcc 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 32px 20px 24px 20px;
+    margin: 0 auto 24px auto;
+    max-width: 430px;
+}
